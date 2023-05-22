@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link rel="stylesheet" href="https://js.arcgis.com/4.23/esri/themes/light/main.css">
+    <style>
+        #viewDiv {
+            height: 98%;
+
+
+            border: 1px solid;
+        }
+
+
+        th {
+            background-color: teal;
+            color: #fff;
+        }
+
+        table {
+            border-collapse: collapse;
+            table-layout: fixed;
+            width: 760px;
+        }
+
+        td {
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+
+
+        tr,
+        th,
+        td {
+
+
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex h-screen border-2 border-red-500">
+        <div class="w-1/2">
+
+            <table id="myTable">
+                <thead>
+                    <tr>
+                        <th>name</th>
+                        <th>email</th>
+                        <th>phone</th>
+                        <th>address</th>
+                        <th>password</th>
+                        <th>latitude</th>
+                        <th>longitude</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+
+                </tbody>
+            </table>
+
+
+
+
+
+        </div>
+        <div class="w-1/2">
+            <div id="viewDiv"></div>
+        </div>
+        <a href="user.html">
+            <button
+                class="absolute p-3 text-white bg-green-400 rounded-md shadow-md bottom-4 right-4 hover:bg-transparent hover:shadow-none hover:border hover:border-green-400">
+                Back </button>
+        </a>
+    </div>
+
+    <script src="https://js.arcgis.com/4.23/"></script>
+    <script src="table.js"></script>
+</body>
+
+</html>
